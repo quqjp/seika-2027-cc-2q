@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todoアプリ</title>
+  </head>
+  <body>
+    <form id="sign-out-form">
+      <span id="user-name"></span>
+      <button>サインアウト</button>
+    </form>
+    <div id="todo-container">
+      <form id="add-item-form">
+        <input name="text" placeholder="タスクを入力" />
+        <button>追加</button>
+      </form>
+      <div id="filter-group">
+        <button id="filter-all" disabled>すべて</button>
+        <button id="filter-incomplete">未完了</button>
+        <button id="filter-complete">完了</button>
+      </div>
+      <div id="item-group"></div>
+    </div>
+    <script type="module" src="./todo.js"></script>
+  </body>
+</html>

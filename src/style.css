@@ -1,0 +1,89 @@
+/* 共通スタイル */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+label span {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type='email'],
+input[type='password'],
+input[type='text'] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 8px 16px;
+  background: #4285f4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #3367d6;
+}
+
+button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Todoアプリ用 */
+#todo-container {
+  margin-top: 20px;
+}
+
+#filter-group {
+  margin: 10px 0;
+}
+
+#filter-group button {
+  margin-right: 5px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.item input[type='checkbox'] {
+  width: 20px;
+  height: 20px;
+}
+
+.item input[type='text'] {
+  flex: 1;
+}
+
+.item button {
+  background: #dc3545;
+  padding: 4px 8px;
+}

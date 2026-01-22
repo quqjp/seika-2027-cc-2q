@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>演習: Firebase Storage</title>
+    <style>
+      #viewer {
+        margin: 20px 0;
+        padding: 10px;
+        border: 1px solid #ccc;
+        min-height: 200px;
+      }
+      #viewer img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Firebase Storage 演習</h1>
+
+    <section id="file-list">
+      <h2>ファイル一覧</h2>
+      <ul></ul>
+    </section>
+
+    <section>
+      <h2>ファイルをアップロード</h2>
+      <form id="regist-file">
+        <input type="file" name="file" accept="image/*" />
+        <button>アップロード</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>ファイルを表示</h2>
+      <form id="show-file">
+        <input type="text" name="path" placeholder="ファイル名を入力" />
+        <button>表示</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>プレビュー</h2>
+      <div id="viewer"></div>
+    </section>
+
+    <script type="module" src="./practice-storage.js"></script>
+  </body>
+</html>

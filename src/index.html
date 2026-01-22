@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>サインイン / 新規登録</title>
+  </head>
+  <body>
+    <div id="sign-up">
+      <form id="form-sign-up" class="hidden">
+        <h1>新規登録</h1>
+        <label>
+          <span>メールアドレス</span>
+          <input type="email" name="email" />
+        </label>
+        <label>
+          <span>パスワード</span>
+          <input type="password" name="password" />
+        </label>
+        <button>サインアップ</button>
+      </form>
+      <button id="toggle-sign-in" class="hidden">サインインはこちら</button>
+    </div>
+    <div id="sign-in">
+      <form id="form-sign-in">
+        <h1>サインイン</h1>
+        <label>
+          <span>メールアドレス</span>
+          <input type="email" name="email" />
+        </label>
+        <label>
+          <span>パスワード</span>
+          <input type="password" name="password" />
+        </label>
+        <button>サインイン</button>
+      </form>
+      <button id="toggle-sign-up">新規登録はこちら</button>
+    </div>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
